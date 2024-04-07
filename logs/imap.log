@@ -1,0 +1,119 @@
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=login")
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] C: A0003 NAMESPACE
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * NAMESPACE (("" "/")) NIL NIL
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: A0003 OK Namespace completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] C: A0004 LIST (SPECIAL-USE) "" "*" RETURN (SUBSCRIBED)
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * LIST (\Subscribed \UnMarked \Archive) "/" Archive
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * LIST (\Subscribed \UnMarked \Trash) "/" Trash
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * LIST (\Subscribed \UnMarked \Junk) "/" Spam
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * LIST (\Subscribed \UnMarked \Sent) "/" Sent
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: * LIST (\Subscribed \UnMarked \Drafts) "/" Drafts
+[07-Apr-2024 01:36:47 +0000]: <5kbe1hpo> [11ED] S: A0004 OK List completed (0.002 + 0.000 + 0.001 secs).
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [11ED] C: A0005 LOGOUT
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [11ED] S: * BYE Logging out
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [11ED] S: A0005 OK Logout completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=mail&_token=gd43q4k76rnhfSjZ6WsNSq1VIO3AIkaI")
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] C: A0003 LIST (SUBSCRIBED) "" "*"
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * LIST (\Subscribed) "/" Drafts
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * LIST (\Subscribed) "/" Sent
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * LIST (\Subscribed) "/" Spam
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * LIST (\Subscribed) "/" Trash
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * LIST (\Subscribed) "/" Archive
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: A0003 OK List completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] C: A0004 GETQUOTAROOT INBOX
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: A0004 OK No quota (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] C: A0005 LOGOUT
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: * BYE Logging out
+[07-Apr-2024 01:36:47 +0000]: <1qjmjiqs> [EE49] S: A0005 OK Logout completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=mail&_action=list&_refresh=1&_layout=widescreen&_mbox=INBOX&_page=&_remote=1&_unlock=loading1712453808452&_=1712453808112")
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] C: A0003 STATUS INBOX (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: * STATUS INBOX (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: A0003 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] C: A0004 GETQUOTAROOT INBOX
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: A0004 OK No quota (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] C: A0005 LOGOUT
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: * BYE Logging out
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [30C1] S: A0005 OK Logout completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=mail&_action=getunread&_page=1&_remote=1&_unlock=0&_=1712453808113")
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0003 LIST (SUBSCRIBED) "" "*"
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * LIST (\Subscribed) "/" Drafts
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * LIST (\Subscribed) "/" Sent
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * LIST (\Subscribed) "/" Spam
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * LIST (\Subscribed) "/" Trash
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * LIST (\Subscribed) "/" Archive
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0003 OK List completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0004 STATUS INBOX (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS INBOX (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0004 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0005 STATUS Drafts (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS Drafts (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0005 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0006 STATUS Sent (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS Sent (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0006 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0007 STATUS Spam (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS Spam (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0007 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0008 STATUS Trash (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS Trash (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0008 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0009 STATUS Archive (MESSAGES UNSEEN)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * STATUS Archive (MESSAGES 0 UNSEEN 0)
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0009 OK Status completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] C: A0010 LOGOUT
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: * BYE Logging out
+[07-Apr-2024 01:36:48 +0000]: <1qjmjiqs> [B5B7] S: A0010 OK Logout completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=mail&_mbox=INBOX&_action=compose")
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] C: A0003 LSUB "" Sent
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: * LSUB (\Sent) "/" Sent
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: A0003 OK Lsub completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] C: A0004 LOGOUT
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: * BYE Logging out
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [912B] S: A0004 OK Logout completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] Connecting to webmail.trycloudstick.xyz:143...
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN AUTH=LOGIN] Mail Delivery Agent
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] C: A0001 AUTHENTICATE PLAIN ****** [69]
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: A0001 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE QUOTA] Logged in
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] C: A0002 ID ("name" "Roundcube" "version" "1.6.5" "php" "8.1.27" "os" "Linux" "command" "/?_task=mail&_action=compose&_id=14587918296611f8b289c15")
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * ID ("name" "Dovecot")
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: A0002 OK ID completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] C: A0003 LIST (SUBSCRIBED) "" "*"
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * LIST (\Subscribed) "/" Drafts
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * LIST (\Subscribed) "/" Sent
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * LIST (\Subscribed) "/" Spam
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * LIST (\Subscribed) "/" Trash
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * LIST (\Subscribed) "/" Archive
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: A0003 OK List completed (0.001 + 0.000 secs).
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] C: A0004 LOGOUT
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: * BYE Logging out
+[07-Apr-2024 01:36:50 +0000]: <1qjmjiqs> [E763] S: A0004 OK Logout completed (0.001 + 0.000 secs).

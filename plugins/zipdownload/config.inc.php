@@ -1,0 +1,1 @@
+/etc/roundcube/plugins/zipdownload/config.inc.php

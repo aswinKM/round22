@@ -1,0 +1,1 @@
+/etc/roundcube/plugins/newmail_notifier/config.inc.php

@@ -1,0 +1,1 @@
+/etc/roundcube/plugins/password/config.inc.php

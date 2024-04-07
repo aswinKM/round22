@@ -25,7 +25,7 @@ $config = array();
 // For examples see http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php
 // NOTE: for SQLite use absolute path (Linux): 'sqlite:////full/path/to/sqlite.db?mode=0646'
 //       or (Windows): 'sqlite:///C:/full/path/to/sqlite.db'
-$config['db_dsnw'] = 'mysql://testuser_gurzotense:8LZai9Ma1t@localhost/test_dbnxglqqdskw';
+$config['db_dsnw'] = 'mysql://rcdbuser:rcpass@localhost/rcdbname';
 
 // The IMAP host chosen to perform the log-in.
 $config['imap_debug'] = true;
@@ -40,7 +40,7 @@ $config['imap_debug'] = true;
 // %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
 // %s - domain name after the '@' from e-mail address provided at login screen
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['default_host'] = 'webmail.trycloudstick.xyz';
+$config['default_host'] = 'webappname';
 
 // SMTP server host (for sending mails).
 // Enter hostname with prefix ssl:// to use Implicit TLS, or use
@@ -52,7 +52,7 @@ $config['default_host'] = 'webmail.trycloudstick.xyz';
 // %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
 // %z - IMAP domain (IMAP hostname without the first part)
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['smtp_server'] = 'webmail.trycloudstick.xyz';
+$config['smtp_server'] = 'webappname';
 
 // SMTP port. Use 25 for cleartext, 465 for Implicit TLS, or 587 for STARTTLS (default)
 $config['smtp_port'] = 587;

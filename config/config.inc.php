@@ -2,7 +2,7 @@
 /* Local configuration for Roundcube Webmail */
 
 //rewrite below this line
-$config["db_dsnw"] = "mysql://roundcube:@localhost/roundcubemail";
+$config["db_dsnw"] = "mysql://rcdbuser:rcpass@localhost/rcdbname";
 
 // Log sent messages to <log_dir>/sendmail or to syslog
 $config["smtp_log"] = false;

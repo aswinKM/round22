@@ -1,35 +1,22 @@
 <?php
+/* Local configuration for Roundcube Webmail */
 
-/*
- +-----------------------------------------------------------------------+
- | Local configuration for the Roundcube Webmail installation.           |
- |                                                                       |
- | This is a sample configuration file only containing the minimum       |
- | setup required for a functional installation. Copy more options       |
- | from defaults.inc.php to this file to override the defaults.          |
- |                                                                       |
- | This file is part of the Roundcube Webmail client                     |
- | Copyright (C) The Roundcube Dev Team                                  |
- |                                                                       |
- | Licensed under the GNU General Public License version 3 or            |
- | any later version with exceptions for skins & plugins.                |
- | See the README file for a full license statement.                     |
- +-----------------------------------------------------------------------+
-*/
+//rewrite below this line
+$config["db_dsnw"] = "mysql://roundcube:@localhost/roundcubemail";
 
-$config = array();
+// Log sent messages to <log_dir>/sendmail or to syslog
+$config["smtp_log"] = false;
 
-// Database connection string (DSN) for read+write operations
-// Format (compatible with PEAR MDB2): db_provider://user:password@host/database
-// Currently supported db_providers: mysql, pgsql, sqlite, mssql, sqlsrv, oracle
-// For examples see http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php
-// NOTE: for SQLite use absolute path (Linux): 'sqlite:////full/path/to/sqlite.db?mode=0646'
-//       or (Windows): 'sqlite:///C:/full/path/to/sqlite.db'
-$config['db_dsnw'] = 'mysql://rcdbuser:rcpass@localhost/rcdbname';
+// Log IMAP conversation to <log_dir>/imap or to syslog
+$config["imap_debug"] = true;
 
+// Log SMTP conversation to <log_dir>/smtp.log or to syslog
+$config["smtp_debug"] = true;
+
+// ----------------------------------
+// IMAP
+// ----------------------------------
 // The IMAP host chosen to perform the log-in.
-$config['imap_debug'] = true;
-
 // Leave blank to show a textbox at login, give a list of hosts
 // to display a pulldown menu or set one host as string.
 // Enter hostname with prefix ssl:// to use Implicit TLS, or use
@@ -40,49 +27,50 @@ $config['imap_debug'] = true;
 // %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
 // %s - domain name after the '@' from e-mail address provided at login screen
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['default_host'] = 'webappname';
+// WARNING: After hostname change update of mail_host column in users table is
+//          required to match old user data records with the new host.
+$config["imap_host"] = "localhost:143";
 
-// SMTP server host (for sending mails).
-// Enter hostname with prefix ssl:// to use Implicit TLS, or use
-// prefix tls:// to use STARTTLS.
-// Supported replacement variables:
-// %h - user's IMAP hostname
-// %n - hostname ($_SERVER['SERVER_NAME'])
-// %t - hostname without the first part
-// %d - domain (http hostname $_SERVER['HTTP_HOST'] without the first part)
-// %z - IMAP domain (IMAP hostname without the first part)
-// For example %n = mail.domain.tld, %t = domain.tld
-$config['smtp_server'] = 'webappname';
-
-// SMTP port. Use 25 for cleartext, 465 for Implicit TLS, or 587 for STARTTLS (default)
-$config['smtp_port'] = 587;
-
-// SMTP username (if required) if you use %u as the username Roundcube
-// will use the current username for login
-$config['smtp_user'] = '%u';
-
-// SMTP password (if required) if you use %p as the password Roundcube
-// will use the current user's password for login
-$config['smtp_pass'] = '%p';
+// IMAP socket context options
+// See http://php.net/manual/en/context.ssl.php
+// The example below enables server certificate validation
+//$config['imap_conn_options'] = array(
+//  'ssl'         => array(
+//     'verify_peer'  => true,
+//     'verify_depth' => 3,
+//     'cafile'       => '/etc/openssl/certs/ca.crt',
+//   ),
+// );
+// Note: These can be also specified as an array of options indexed by hostname
 
 // provide an URL where a user can get support for this Roundcube installation
 // PLEASE DO NOT LINK TO THE ROUNDCUBE.NET WEBSITE HERE!
-$config['support_url'] = '';
+$config["support_url"] = "";
 
-// Name your service. This is displayed on the login screen and in the window title
-$config['product_name'] = 'Roundcube Webmail';
+// use this folder to store log files
+// must be writeable for the user who runs PHP process (Apache user if mod_php is being used)
+// This is used by the 'file' log driver.
+$config["log_dir"] = "/var/log/roundcube/";
 
-// This key is used to encrypt the users imap password which is stored
-// in the session record. For the default cipher method it must be
-// exactly 24 characters long.
-// YOUR KEY MUST BE DIFFERENT THAN THE SAMPLE VALUE FOR SECURITY REASONS
-$config['des_key'] = 'rcmail-!24ByteDESkey*Str';
+// This key is used for encrypting purposes, like storing of imap password
+// in the session. For historical reasons it's called DES_key, but it's used
+// with any configured cipher_method (see below).
+// For the default cipher_method a required key length is 24 characters.
+$config["des_key"] = "0mBidlixbRfrR7rYPWS3gHmW";
+
+// Maximum number of recipients per message (including To, Cc, Bcc).
+// Default: 0 (no limit)
+$config["max_recipients"] = 100;
 
 // List of active plugins (in plugins/ directory)
-$config['plugins'] = array(
-    'archive',
-    'zipdownload',
-);
+$config["plugins"] = ["password", "newmail_notifier", "zipdownload", "archive"];
 
-// skin name: folder from skins/
-$config['skin'] = 'elastic';
+$config["default_user"] = "";
+
+$config["default_pass"] = "";
+
+
+$config["smtp_host"] = "localhost:587";
+
+// Log session authentication errors to <log_dir>/session or to syslog
+$config["log_session"] = true;

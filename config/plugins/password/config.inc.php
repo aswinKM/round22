@@ -2,25 +2,27 @@
 
 // Password Plugin options
 // -----------------------
-// A driver to use for password change. Default: "sql".
-// See README file for list of supported driver names.
-$config["password_driver"] = "cloudstick";
 
-// Require the new password to be a certain length.
-// set to blank to allow passwords of any length
-$config["password_minimum_length"] = 8;
+// Driver for password change: cloudstick handles /etc/exim4/domains/{domain}/passwd
+$config['password_driver'] = 'cloudstick';
 
-// Require the new password to contain a letter and punctuation character
-// Change to false to remove this check.
-$config["password_require_nonalpha"] = false;
+// Hashing algorithm — must match the {MD5}$1$... format in the passwd files
+$config['password_algorithm'] = 'md5-crypt';
 
-// Enables logging of password changes into logs/password
-$config["password_log"] = false;
+// Require the current (old) password to be entered before changing
+$config['password_confirm_current'] = true;
 
-// Comma-separated list of login exceptions for which password change
-// will be not available (no Password tab in Settings)
-$config["password_login_exceptions"] = null;
+// Minimum password length
+$config['password_minimum_length'] = 8;
 
-// By default domains in variables are using unicode.
-// Enable this option to use punycoded names
-$config["password_idn_ascii"] = false;
+// Require at least one non-alpha character
+$config['password_require_nonalpha'] = false;
+
+// Log password changes to logs/password
+$config['password_log'] = false;
+
+// Logins exempt from password change (no Password tab shown)
+$config['password_login_exceptions'] = null;
+
+// Use unicode domain names (false = UTF-8, true = punycode)
+$config['password_idn_ascii'] = false;
